@@ -1,0 +1,16 @@
+list: user.system_paths
+hostname: gg
+-
+user: /home/rukai
+desktop: /home/rukai/Desktop
+desk: /home/rukai/Desktop
+documents: /home/rukai/Documents
+docks: /home/rukai/Documents
+downloads: /home/rukai/Downloads
+music: /home/rukai/Music
+pictures: /home/rukai/Pictures
+videos: /home/rukai/Videos
+talon home: /home/rukai/.talon
+talon recordings: /home/rukai/.talon/recordings
+talon user: /home/rukai/.talon/user
+home: /home/rukai

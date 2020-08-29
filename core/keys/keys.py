@@ -126,7 +126,6 @@ punctuation_words = {
     "exclamation point": "!",
     "asterisk": "*",
     "hash sign": "#",
-    "number sign": "#",
     "percent sign": "%",
     "at sign": "@",
     "and sign": "&",

@@ -71,6 +71,7 @@ class AppActions:
     def tab_next():
         actions.user.vscode("workbench.action.nextEditorInGroup")
 
+    # tab last
     def tab_previous():
         actions.user.vscode("workbench.action.previousEditorInGroup")
 
