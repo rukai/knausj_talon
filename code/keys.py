@@ -3,10 +3,34 @@ from typing import Set
 from talon import Module, Context, actions, app
 import sys
 
-default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split(
-    " "
-)
-letters_string = "abcdefghijklmnopqrstuvwxyz"
+alphabet = {
+    "air": "a",
+    "bat": "b",
+    "cap": "c",
+    "drum": "d",
+    "each": "e",
+    "fine": "f",
+    "gust": "g",
+    "harp": "h",
+    "ice": "i",
+    "judge": "j",
+    "crunch": "k",
+    "look": "l",
+    "made": "m",
+    "near": "n",
+    "odd": "o",
+    "pit": "p",
+    "quench": "q",
+    "red": "r",
+    "sun": "s",
+    "trap": "t",
+    "urge": "u",
+    "vest": "v",
+    "whale": "w",
+    "plex": "x",
+    "yank": "y",
+    "zip": "z",
+}
 
 default_digits = "zero one two three four five six seven eight nine".split(" ")
 numbers = [str(i) for i in range(10)]
@@ -122,7 +146,6 @@ if app.platform  == "mac":
     modifier_keys["command"] = "cmd"
     modifier_keys["option"] = "alt"
 ctx.lists["self.modifier_key"] = modifier_keys
-alphabet = dict(zip(default_alphabet, letters_string))
 ctx.lists["self.letter"] = alphabet
 
 # `punctuation_words` is for words you want available BOTH in dictation and as
@@ -222,11 +245,10 @@ simple_keys = [
 ]
 
 alternate_keys = {
-    "delete": "backspace",
-    "forward delete": "delete",
-    #'junk': 'backspace',
     "page up": "pageup",
     "page down": "pagedown",
+    "forward delete": "delete",
+    'empty': 'space',
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):
